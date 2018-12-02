@@ -1,0 +1,999 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"inline\tdisplay"
+			],
+			[
+				"align",
+				"text-align\tproperty"
+			],
+			[
+				"bg-da",
+				"bg-danger \tBootstrap 4 Class"
+			],
+			[
+				"msqli_fetc",
+				"mysqli_fetch_array"
+			],
+			[
+				"padding",
+				"padding-left\tproperty"
+			],
+			[
+				"overf",
+				"overflow-x\tproperty"
+			],
+			[
+				"flex",
+				"flex-shrink\tproperty"
+			],
+			[
+				"p",
+				"p-4 \tBootstrap 4 Class"
+			],
+			[
+				"just",
+				"justify-content-end \tBootstrap 4 Class"
+			],
+			[
+				"h",
+				"h-25 \tBootstrap 4 Class"
+			],
+			[
+				"textw",
+				"text-white \tBootstrap 4 Class"
+			],
+			[
+				"btn",
+				"btn-primary \tBootstrap 4 Class"
+			],
+			[
+				"border-d",
+				"border-dark \tBootstrap 4 Class"
+			],
+			[
+				"mysqli_f",
+				"mysqli_fetch_array"
+			],
+			[
+				"l",
+				"LOGO.png\tw:1920 h:1080"
+			],
+			[
+				"im",
+				"images/"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"for",
+				"FormMaintenance.php"
+			],
+			[
+				"Form",
+				"FormExpenses.php"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"marg",
+				"margin-top\tproperty"
+			],
+			[
+				"justi",
+				"justify-content-end \tBootstrap 4 Class"
+			],
+			[
+				"m",
+				"margin-left\tproperty"
+			],
+			[
+				"d-i",
+				"d-inline-block \tBootstrap 4 Class"
+			],
+			[
+				"bac",
+				"background\tproperty"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"text-da",
+				"text-dark \tBootstrap 4 Class"
+			],
+			[
+				"navbar",
+				"navbar-brand \tBootstrap 4 Class"
+			],
+			[
+				"input",
+				"input-group \tBootstrap 4 Class"
+			],
+			[
+				"z",
+				"z-index\tproperty"
+			],
+			[
+				"padd",
+				"padding-top\tproperty"
+			],
+			[
+				"text-d",
+				"text-dark \tBootstrap 4 Class"
+			],
+			[
+				"jusr",
+				"justify-content-center \tBootstrap 4 Class"
+			],
+			[
+				"border",
+				"border-style\tproperty"
+			],
+			[
+				"border-r",
+				"border-right-0 \tBootstrap 4 Class"
+			],
+			[
+				"b4for",
+				"b4:form:validation\tvalidation"
+			],
+			[
+				"contai",
+				"container-fluid \tBootstrap 4 Class"
+			],
+			[
+				"margin",
+				"margin-right\tproperty"
+			],
+			[
+				"pos",
+				"position\tproperty"
+			],
+			[
+				"aling-se",
+				"align-self-end \tBootstrap 4 Class"
+			],
+			[
+				"border-top",
+				"border-top-right-radius\tproperty"
+			],
+			[
+				"bg-w",
+				"bg-white \tBootstrap 4 Class"
+			],
+			[
+				"container",
+				"container \tBootstrap 4 Class"
+			],
+			[
+				"d",
+				"d-inline-block \tBootstrap 4 Class"
+			],
+			[
+				"d-in",
+				"d-inline-flex \tBootstrap 4 Class"
+			],
+			[
+				"bg-",
+				"bg-info \tBootstrap 4 Class"
+			],
+			[
+				"b4carous",
+				"b4:carousel\tcarousel"
+			],
+			[
+				"b4carouse",
+				"b4:template:carousel\tcarousel"
+			],
+			[
+				"font",
+				"font-weight-bold \tBootstrap 4 Class"
+			],
+			[
+				"rou",
+				"rounded \tBootstrap 4 Class"
+			],
+			[
+				"text",
+				"text-uppercase \tBootstrap 4 Class"
+			],
+			[
+				"conta",
+				"container-fluid \tBootstrap 4 Class"
+			],
+			[
+				"bg",
+				"bg-white \tBootstrap 4 Class"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"jus",
+				"justify-content-center \tBootstrap 4 Class"
+			],
+			[
+				"align-cont",
+				"align-content-center \tBootstrap 4 Class"
+			],
+			[
+				"carbon",
+				"carbon"
+			],
+			[
+				"file_get",
+				"file_get_contents"
+			],
+			[
+				"my",
+				"my-2 \tBootstrap 4 Class"
+			],
+			[
+				"C",
+				"conexion.php"
+			],
+			[
+				"justif",
+				"justify-content-around \tBootstrap 4 Class"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"bacc",
+				"background-color"
+			],
+			[
+				"btn-se",
+				"btn-secondary \tBootstrap 4 Class"
+			],
+			[
+				"mysqli_fe",
+				"mysqli_fetch_array"
+			],
+			[
+				"jusi",
+				"justify-content-between \tBootstrap 4 Class"
+			],
+			[
+				"ju",
+				"justify-content-center \tBootstrap 4 Class"
+			],
+			[
+				"inline",
+				"d-inline \tBootstrap 4 Class"
+			],
+			[
+				"bt",
+				"btn-primary \tBootstrap 4 Class"
+			],
+			[
+				"vo",
+				"Voto_emitido"
+			],
+			[
+				"btn-s",
+				"btn-secondary \tBootstrap 4 Class"
+			],
+			[
+				"mt",
+				"mt-4 \tBootstrap 4 Class"
+			],
+			[
+				"bor",
+				"border-right-0 \tBootstrap 4 Class"
+			],
+			[
+				"justo",
+				"justify-content-center \tBootstrap 4 Class"
+			],
+			[
+				"text-w",
+				"text-white \tBootstrap 4 Class"
+			],
+			[
+				"iss",
+				"iis_set_dir_security"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"d-lg",
+				"d-lg-inline-block \tBootstrap 4 Class"
+			],
+			[
+				"nabar",
+				"navbar-nav \tBootstrap 4 Class"
+			],
+			[
+				"navar",
+				"navbar-collapse \tBootstrap 4 Class"
+			],
+			[
+				"align-it",
+				"align-items-stretch \tBootstrap 4 Class"
+			],
+			[
+				"al",
+				"align-content-center \tBootstrap 4 Class"
+			],
+			[
+				"align-items-s",
+				"align-items-stretch \tBootstrap 4 Class"
+			],
+			[
+				"roudned",
+				"rounded-top \tBootstrap 4 Class"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"fot",
+				"font-family"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"j",
+				"popper.min.js"
+			],
+			[
+				"b4stick",
+				"b4:template:sticky_footer+navbar\tsticky_footer+navbar"
+			],
+			[
+				"b4navartop",
+				"b4:template:navbar_top\tnavbar_top"
+			],
+			[
+				"b4col",
+				"b4:grid:col\tcol"
+			],
+			[
+				"b4j",
+				"b4:template:cdn_js\tcdn_js"
+			],
+			[
+				"b4grid",
+				"b4:grid:container\tcontainer"
+			],
+			[
+				"fix",
+				"fixed-top \tBootstrap 4 Class"
+			],
+			[
+				"nab",
+				"navbar \tBootstrap 4 Class"
+			],
+			[
+				"marign",
+				"margin-bottom"
+			],
+			[
+				"align-items",
+				"align-items-center \tBootstrap 4 Class"
+			],
+			[
+				"tex",
+				"text-left \tBootstrap 4 Class"
+			],
+			[
+				"text-",
+				"text-muted \tBootstrap 4 Class"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"exis",
+				"property_exists"
+			],
+			[
+				"else",
+				"elseif\telseif …"
+			],
+			[
+				"ali",
+				"align-self-center \tBootstrap 4 Class"
+			],
+			[
+				"pading",
+				"padding"
+			],
+			[
+				"aling-sel",
+				"align-self-center \tBootstrap 4 Class"
+			],
+			[
+				"align-item",
+				"align-items-center \tBootstrap 4 Class"
+			],
+			[
+				"carousel-co",
+				"carousel-control-next-icon \tBootstrap 4 Class"
+			],
+			[
+				"conte",
+				"container-fluid \tBootstrap 4 Class"
+			],
+			[
+				"padding-",
+				"padding-left"
+			],
+			[
+				"align-content",
+				"align-content-center \tBootstrap 4 Class"
+			],
+			[
+				"align-text",
+				"align-text-bottom \tBootstrap 4 Class"
+			],
+			[
+				"ala",
+				"align-self-auto \tBootstrap 4 Class"
+			],
+			[
+				"aling",
+				"align-items-center \tBootstrap 4 Class"
+			],
+			[
+				"d-mdb",
+				"d-md-table \tBootstrap 4 Class"
+			],
+			[
+				"a",
+				"align-items-end \tBootstrap 4 Class"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"lang",
+				"language\tAttr"
+			],
+			[
+				"text-c",
+				"text-center \tBootstrap 4 Class"
+			],
+			[
+				"justify-co",
+				"justify-content-center \tBootstrap 4 Class"
+			],
+			[
+				"html",
+				"Login.html"
+			],
+			[
+				"align-conte",
+				"align-content-center \tBootstrap 4 Class"
+			],
+			[
+				"align-co",
+				"align-content-end \tBootstrap 4 Class"
+			],
+			[
+				"aling-i",
+				"align-items-center \tBootstrap 4 Class"
+			],
+			[
+				"tab",
+				"table-bordered \tBootstrap 4 Class"
+			],
+			[
+				"b",
+				"button\tTag"
+			],
+			[
+				"link",
+				"btn-link \tBootstrap 4 Class"
+			],
+			[
+				"th",
+				"thead\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"migrate",
+				"Laravel Artisan 5: Migrate:Refresh"
+			],
+			[
+				"make:model",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"artisan r:l",
+				"Laravel Artisan 5: Route:List"
+			],
+			[
+				"arrtisan route",
+				"Laravel Artisan 5: Route:List"
+			],
+			[
+				"migrate:r",
+				"Laravel Artisan 5: Migrate:Refresh"
+			],
+			[
+				"make:cotr",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"controler",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"migra",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"migrate:re",
+				"Laravel Artisan 5: Migrate:Refresh"
+			],
+			[
+				"migrate:ro",
+				"Laravel Artisan 5: Migrate:Rollback"
+			],
+			[
+				"migr",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"make:migra",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"rollb",
+				"Laravel Artisan 5: Migrate:Rollback"
+			],
+			[
+				"roll",
+				"Laravel Artisan 5: Migrate:Rollback"
+			],
+			[
+				"make:migration",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"make:midd",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"make",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"make c",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"middle",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"controller",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"middleware",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"Laravel middle",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"Laravel artisan 5: make:midd",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"Snippet: ",
+				"Snippet: blade-var"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: en",
+				"Package Control: Enable Package"
+			],
+			[
+				"rena",
+				"ANF: Rename File"
+			],
+			[
+				"",
+				"ANF: Rename File"
+			],
+			[
+				"renamie",
+				"ANF: Rename File"
+			],
+			[
+				"Laravel ",
+				"Laravel Artisan 5: Serve"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"add",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 268.0,
+		"history":
+		[
+			"git status",
+			"php artisan route:list",
+			"php artisan r:l",
+			"cls",
+			"php artisan r:l",
+			"php -v",
+			"php artisan",
+			"php artisan make:controller example",
+			"cd",
+			"`PackageResourceViewer: Open Resource`:",
+			"PackageResourceViewer",
+			"Open Resorce",
+			"git",
+			"s",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/ProyectoVotaciones/AdEncuestas.php",
+		"/C/xampp/htdocs/ProyectoGym/php/UserMenus2.php",
+		"/C/xampp/htdocs/ProyectoGym/messagesList.php",
+		"/C/xampp/htdocs/ProyectoGym/notificationsList.php",
+		"/C/xampp/htdocs/ProyectoGym/index.php",
+		"/C/xampp/htdocs/ProyectoGym/chat.php",
+		"/C/xampp/htdocs/ProyectoGym/css/style.css",
+		"/C/xampp/htdocs/ProyectoGym/php/CreateAds.php",
+		"/C/xampp/htdocs/ProyectoGym/php/MakeNotifications.php",
+		"/C/Users/HP Gamer/AppData/Local/Temp/Rar$DIa0.142/chat.php",
+		"/C/Users/HP Gamer/AppData/Local/Temp/Rar$DIa0.772/chat.php",
+		"/C/xampp/htdocs/ProyectoGym/Calc.html",
+		"/C/xampp/htdocs/ProyectoGym/php/EditAds.php",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteAds.php",
+		"/C/xampp/htdocs/ProyectoGym/FormAds.php",
+		"/C/xampp/htdocs/ProyectoGym/ctAds.php",
+		"/C/xampp/htdocs/ProyectoGym/fontello-73592da2/fontello-73592da2/css/fontello.css",
+		"/C/xampp/htdocs/ProyectoGym/fontello-a1829433/fontello-a1829433/css/fontello.css",
+		"/C/xampp/htdocs/ProyectoGym/FormProducts.php",
+		"/C/xampp/htdocs/ProyectoGym/ctProducts.php",
+		"/C/xampp/htdocs/ProyectoGym/php/EditProducts.php",
+		"/C/xampp/htdocs/ProyectoGym/FormInvoices.php",
+		"/C/xampp/htdocs/ProyectoGym/FormExpenses.php",
+		"/C/xampp/htdocs/ProyectoGym/EditClients.php",
+		"/C/xampp/htdocs/ProyectoGym/php/CreateProducts.php",
+		"/C/xampp/htdocs/ProyectoGym/php/EditMaintenance.php",
+		"/C/xampp/htdocs/ProyectoGym/php/EditExpenses.php",
+		"/C/xampp/htdocs/ProyectoGym/php/CreateMaintenance.php",
+		"/C/xampp/htdocs/ProyectoGym/php/CreateExpenses.php",
+		"/C/xampp/htdocs/ProyectoGym/ctClients.php",
+		"/C/xampp/htdocs/ProyectoGym/EditInstructor.php",
+		"/C/xampp/htdocs/ProyectoGym/php/EditInstructor.php",
+		"/C/xampp/htdocs/ProyectoGym/ctinstructores.php",
+		"/C/xampp/htdocs/ProyectoGym/css/fontello.css",
+		"/C/xampp/htdocs/ProyectoGym/EditAdmin.php",
+		"/C/xampp/htdocs/ProyectoGym/fontello-c98b4b08/fontello-c98b4b08/css/fontello.css",
+		"/C/xampp/htdocs/ProyectoGym/php/EditClients.php",
+		"/C/xampp/htdocs/ProyectoGym/ctadmins.php",
+		"/C/xampp/htdocs/ProyectoGym/php/EditAdmin.php",
+		"/C/xampp/htdocs/ProyectoGym/Plantilla.php",
+		"/C/xampp/htdocs/ProyectoGym/ctExpenses.php",
+		"/C/xampp/htdocs/ProyectoGym/FormMaintenance.php",
+		"/C/xampp/htdocs/ProyectoGym/ctInvoices.php",
+		"/C/xampp/htdocs/ProyectoGym/ctMaintenance.php",
+		"/C/xampp/htdocs/ProyectoGym/ctSales.php",
+		"/C/xampp/htdocs/ProyectoGym/SpinnigFitbd.sql",
+		"/C/Users/HP Gamer/Google Drive/5° Semestre/Interaccion Humano-Computadora/Prototipo 1/Index.html",
+		"/C/xampp/htdocs/ProyectoGym/php/chat.php",
+		"/C/xampp/htdocs/ProyectoGym/php/login.php",
+		"/C/xampp/htdocs/ProyectoGym(TeamVersion)/login.php",
+		"/C/xampp/htdocs/ProyectoGym(TeamVersion)/validarbd.php",
+		"/C/Users/HP Gamer/Google Drive/5° Semestre/Interaccion Humano-Computadora/Prototipo 1/css/Estilos.css",
+		"/C/Users/HP Gamer/Google Drive/5° Semestre/Interaccion Humano-Computadora/Prototipo 1/Encargos.html",
+		"/C/xampp/htdocs/ProyectoGym/login.php",
+		"/C/xampp/htdocs/ProyectoGym/registration.php",
+		"/C/xampp/htdocs/ProyectoGym/catalogs/EditAdmin.php",
+		"/C/xampp/htdocs/ProyectoGym/catalogs/FormAds.php",
+		"/C/xampp/htdocs/ProyectoGym/catalogs/FormExpenses.php",
+		"/C/xampp/htdocs/ProyectoGym/catalogs/FormInvoices.php",
+		"/C/xampp/htdocs/ProyectoGym/catalogs/FormMaintenance.php",
+		"/C/xampp/htdocs/ProyectoGym/php/AuthenticationAdmin.php",
+		"/C/xampp/htdocs/ProyectoGym/php/AuthenticationClientInstructor.php",
+		"/C/xampp/htdocs/ProyectoGym/php/UserMenus.php",
+		"/C/xampp/htdocs/ProyectoGym/AvanceCatalogos2.rar",
+		"/C/xampp/htdocs/ProyectoGym(TeamVersion)/index.html",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteInstructor.php",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteAdmin.php",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteClient.php",
+		"/C/xampp/htdocs/ProyectoGym/php/SessionButtons.php",
+		"/C/xampp/htdocs/ProyectoGym(TeamVersion)/index_admin.html",
+		"/C/xampp/htdocs/ProyectoVotaciones/php/Autentificacion.php",
+		"/C/xampp/htdocs/ProyectoVotaciones/php/Salir.php",
+		"/C/xampp/htdocs/ProyectoGym/php/Logout.php",
+		"/C/xampp/htdocs/ProyectoGym(TeamVersion)/index_trabajador.html",
+		"/C/xampp/htdocs/ProyectoGym(TeamVersion)/index_alumno.html",
+		"/C/xampp/htdocs/ProyectoGym/login.html",
+		"/C/xampp/htdocs/ProyectoGym(TeamVersion)/login.html",
+		"/C/xampp/htdocs/ProyectoVotaciones/php/InicioSesion.php",
+		"/C/Users/HP Gamer/Google Drive/7° Semestre/IA - EjemplosDomains/domain-blocks.pddl",
+		"/C/Users/HP Gamer/Google Drive/7° Semestre/IA - EjemplosDomains/unamed1.pddl",
+		"/C/xampp/htdocs/ProyectoGym/php/CreateInvoices.php",
+		"/C/xampp/htdocs/ProyectoGym/php/EditInvoices.php",
+		"/C/xampp/htdocs/ProyectoGym/imageview.php",
+		"/C/xampp/htdocs/ProyectoLIHC/php/InsertStock.php",
+		"/C/xampp/htdocs/ProyectoLIHC/AdStock.php",
+		"/C/xampp/htdocs/ProyectoVotaciones/Prueba.php",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteSale.php",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteProduct.php",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteMaintenance.php",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteExpense.php",
+		"/C/xampp/htdocs/ProyectoGym/php/DeleteInvoice.php",
+		"/C/xampp/htdocs/ProyectoVotaciones/php/DeleteUsuario.php",
+		"/C/xampp/htdocs/ProyProrroga/report.php",
+		"/C/xampp/htdocs/ProyectoVotaciones/php/EditUsuario.php",
+		"/C/xampp/htdocs/ProyectoVotaciones/AdUsuarios.php",
+		"/C/xampp/htdocs/ProyProrroga/index.php",
+		"/C/xampp/htdocs/ProyectoVotaciones/php/EditarDatos.php",
+		"/C/xampp/htdocs/ProyectoVotaciones/php/InsertUsuario.php",
+		"/C/xampp/htdocs/ProyectoGym/php/conection.php",
+		"/C/xampp/htdocs/ProyectoGym/css/bootstrap.css",
+		"/C/xampp/htdocs/ProyectoGym/fontello-1bb156f7/fontello-1bb156f7/css/fontello.css",
+		"/C/xampp/htdocs/ProyectoVotaciones/php/conexion.php",
+		"/C/xampp/htdocs/SpinningFit/index.html",
+		"/C/xampp/htdocs/ProyectoGym/index.html",
+		"/C/xampp/htdocs/ProyectoGym/Example.php",
+		"/C/xampp/htdocs/SpinningFit/css/icomoon.css",
+		"/C/xampp/htdocs/SpinningFit/css/animate.css",
+		"/C/xampp/htdocs/ProyectoGym/fontello-fda503c9/fontello-fda503c9/css/fontello.css",
+		"/C/Users/HP Gamer/Downloads/pushbar.js-master/pushbar.js-master/index.html",
+		"/C/xampp/htdocs/ProyectoGym/fontello-cb451487/fontello-cb451487/demo.html",
+		"/C/xampp/htdocs/ProyectoLIHC/Registro.php",
+		"/C/xampp/htdocs/ProyectoGym/registration.html",
+		"/C/Users/HP Gamer/Downloads/Spinning Fit/Spinning Fit/css/style.css",
+		"/C/Users/HP Gamer/Downloads/Spinning Fit/Spinning Fit/css/flexslider.css",
+		"/C/xampp/htdocs/ProyectoGym/css/styles.css",
+		"/C/Users/HP Gamer/Downloads/Spinning Fit/Spinning Fit/css/owl.carousel.min.css",
+		"/C/xampp/htdocs/ProyectoLIHC/Index.php",
+		"/C/Escuela/Desarrollo/Curso Bootstrap4/Archivos del curso/carousel.html",
+		"/C/xampp/htdocs/ProyectoLIHC/css/Estilos.css",
+		"/C/laragon/www/Prueba/resources/views/messages/edit.blade.php",
+		"/C/laragon/www/Prueba/resources/views/messages/show.blade.php",
+		"/C/laragon/www/Prueba/resources/views/messages/index.blade.php",
+		"/C/laragon/www/Prueba/app/Message.php",
+		"/C/laragon/www/Prueba/resources/views/errors/404.blade.php",
+		"/C/laragon/www/Prueba/routes/web.php",
+		"/C/laragon/www/Prueba/database/migrations/2018_09_09_193926_create_messages_table.php",
+		"/C/Users/HP Gamer/AppData/Roaming/Sublime Text 3/Packages/PHP Companion/PHP Companion.sublime-settings",
+		"/C/Users/HP Gamer/AppData/Roaming/Sublime Text 3/Packages/User/PHP Companion.sublime-settings"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 156.0
+	},
+	"pinned_build_system": "Packages/Java/Ant.sublime-build",
+	"project": "server.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 283.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
