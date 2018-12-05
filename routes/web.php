@@ -22,6 +22,15 @@ Route::get('test', function(){
 });
 */
 
+/*
+App\User::create([
+	'name' => 'Estudiante',
+	'email' => 'est@gmail.com',
+	'password' => bcrypt('qwerty'),
+	'role' => 'Moder'
+]);
+*/
+
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 
 
@@ -33,6 +42,7 @@ Route::get('logout', ['as'=> 'logout', 'uses' => 'Auth\LoginController@logout'])
 
 
 Route::resource('mensajes', 'MessagesController');
+Route::resource('usuarios', 'UsersController');
 /*
 Route::get('contactanos', ['as'=>'contacto', 'uses' => 'PagesController@contact']);
 
