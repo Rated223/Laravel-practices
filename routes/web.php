@@ -31,6 +31,19 @@ App\User::create([
 ]);
 */
 
+
+/*
+App\Role::create([
+	'name' => 'estudiante',
+	'display_name' => 'Estudiante ',
+	'description' => 'Este role tiene los permisos de estudiante',
+]);
+*/
+
+Route::get('roles', function(){
+	return App\Role::with('user')->get();
+});
+
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 
 

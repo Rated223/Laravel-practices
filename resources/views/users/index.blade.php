@@ -18,12 +18,15 @@
 		@foreach ($users as $user)
 			<tr>
 				<td>{{ $user->id }}</td>
-				<td>
-					<a href="{{ route('mensajes.show', $user->id) }}">
-					{{ $user->name }}</a>
-				</td>
+				<td>{{ $user->name }}</td>
 				<td>{{ $user->email }}</td>
-				<td>{{ $user->role }}</td>
+				<td>
+					<ul>
+						@foreach ($user->roles as $role)
+							<li>{{ $role->display_name }}</li>
+						@endforeach
+					</ul>
+				</td>
 				<td>
 					<a class="btn btn-info btn-sm" href=" {{ route('mensajes.edit', $user->id) }}">Editar</a> 
 					<form style="display:inline;" method="POST" action="{{ route('mensajes.destroy', $user->id) }}">
