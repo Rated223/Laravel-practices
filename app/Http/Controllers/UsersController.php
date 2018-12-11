@@ -10,7 +10,7 @@ class UsersController extends Controller
 {
     function __construct() {
         $this->middleware('auth', ['except' => ['show']]);
-        $this->middleware('roles:admin', ['except' => ['edit', 'update', 'show']]);
+        $this->middleware('roles:admin', ['except' => ['edit', 'update', 'show', 'destroy']]);
     }
 
     /**

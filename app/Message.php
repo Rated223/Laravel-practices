@@ -11,6 +11,10 @@ class Message extends Model
     //protected $table = 'nombre_de_la_tabla';
 
 
-	//lA SIGUIENTE PROPIEDAD PERMITE DESIGNAR LOS DATOS QUE SE PUEDEN INGRESAR DE FORMA MASIVA
+	//lA SIGUIENTE PROPIEDAD PERMITE DESIGNAR LOS DATOS QUE ES PUEDEN INGRESAR DE FORMA MASIVA
     protected $fillable = ['nombre', 'email', 'mensaje'];
+
+    public function user(){
+    	return $this->belongsTo(User::class);
+    }
 }

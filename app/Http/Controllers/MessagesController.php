@@ -76,8 +76,15 @@ class MessagesController extends Controller
         $message->save();
         */
 
-        // USANDO EL MODELO DE ELOQUENT
-        Message::create($request->all());
+        // USANDO EL MODELO DE ELOQUENT Y PERMITIR ENVIAR MENSAJES PARA USUARIOS E INVITADOS
+        $message = Message::create($request->all());
+
+        if (auth()->check()) {
+            auth()->user()->messages()->save($message);
+        }
+
+        //PARA PERMITIR SOLO A USUARIOS REGISTRADOS ENVIAR MENSAJES SE UTILIZA LA SIGUIENTE LINEA
+        //auth()->user()->messages()->create($request->all());
 
         return redirect() -> route('mensajes.create')->with('info', 'Hemos recibido tu mensaje');
     }
