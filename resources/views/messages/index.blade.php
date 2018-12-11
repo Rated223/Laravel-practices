@@ -4,7 +4,7 @@
 
 <h1>Todos los mensajes</h1>
 
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped table-sm">
 	<thead class="thead-dark">
 		<tr>
 			<th>ID</th>

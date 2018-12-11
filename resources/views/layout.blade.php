@@ -38,8 +38,14 @@
 									<a class="nav-link {{ activeMenu('usuarios*') }}" href="{{ route('usuarios.index') }}">Usuarios</a>
 								</li>
 							@endif
-							<li class="nav-item ml-md-auto">
-								<a class="nav-link" href="/logout">Cerrar sesion de {{ auth()->user()->name }}</a>
+							<li class="nav-item dropdown ml-md-auto">
+								<a class="nav-link dropdown-toggle" href="#" id="menuUusuario" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          		{{ auth()->user()->name }}
+						        </a>
+								<div class="dropdown-menu" aria-labelledby="menuUusuario">
+									<a class="dropdown-item" href="/usuarios/{{ auth()->id() }}/edit">Cuenta</a>
+									<a class="dropdown-item" href="/logout">Cerrar sesion</a>
+						        </div>
 							</li>
 						@else
 							<li class="nav-item ml-md-auto">

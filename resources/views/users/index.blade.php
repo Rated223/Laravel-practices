@@ -4,7 +4,7 @@
 
 <h1>Usuarios</h1>
 
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped table-sm">
 	<thead class="thead-dark">
 		<tr>
 			<th>ID</th>
@@ -21,15 +21,10 @@
 				<td>{{ $user->name }}</td>
 				<td>{{ $user->email }}</td>
 				<td>
-					<ul>
-						@foreach ($user->roles as $role)
-							<li>{{ $role->display_name }}</li>
-						@endforeach
-					</ul>
-				</td>
+					{{ $user->roles->pluck('display_name')->implode(', ') }}
 				<td>
-					<a class="btn btn-info btn-sm" href=" {{ route('mensajes.edit', $user->id) }}">Editar</a> 
-					<form style="display:inline;" method="POST" action="{{ route('mensajes.destroy', $user->id) }}">
+					<a class="btn btn-info btn-sm" href=" {{ route('usuarios.edit', $user->id) }}">Editar</a> 
+					<form style="display:inline;" method="POST" action="{{ route('usuarios.destroy', $user->id) }}">
 						{!! csrf_field() !!}
 						{!! method_field('DELETE') !!}
 						<button class="btn btn-danger btn-sm" type="submit">Eliminar</button>
