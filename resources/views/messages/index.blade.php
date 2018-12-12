@@ -11,6 +11,8 @@
 			<th>Nombre</th>
 			<th>Email</th>
 			<th>Mensaje</th>
+			<th>Notas</th>
+			<th>Etiquetas</th>
 			<th>Acciones</th>
 		</tr>
 	</thead>
@@ -34,6 +36,8 @@
 						{{ $mensaje->mensaje }}
 					</a>
 				</td>
+				<td>{{ $mensaje->note->body }}</td>
+				<td>{{ $mensaje->tags->pluck('name')->implode(', ') }}</td>
 				<td>
 					<a class="btn btn-info btn-sm" href=" {{ route('mensajes.edit', $mensaje->id) }}">Editar</a> 
 					<form style="display:inline;" method="POST" action="{{ route('mensajes.destroy', $mensaje->id) }}">

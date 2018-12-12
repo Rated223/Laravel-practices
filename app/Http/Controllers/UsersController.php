@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Role;
 use App\Http\Requests\UpdateUserRequest;
+use App\Http\Requests\CreateUserRequest;
 use Illuminate\Http\Request;
 
 class UsersController extends Controller
@@ -31,18 +33,21 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        $roles = Role::pluck('display_name', 'id');
+        return view('users.create', compact('roles'));
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\CreateUserRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateUserRequest $request)
     {
-        //
+        $user = User::create($request->all());
+        $user->roles()->attach($request->roles);
+        return redirect()->route('usuarios.index');
     }
 
     /**
@@ -68,13 +73,14 @@ class UsersController extends Controller
     {
         $user = User::findOrFail($id);
         $this->authorize('edit', $user);
-        return view('users.edit', compact('user'));
+        $roles = Role::pluck('display_name', 'id');
+        return view('users.edit', compact('user', 'roles'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  App\Http\Requests\UpdateUserRequest  $request
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
@@ -82,7 +88,8 @@ class UsersController extends Controller
     {
         $user = User::findOrFail($id);
         $this->authorize('update', $user);
-        $user->update($request->all());
+        $user->update($request->only('name', 'email'));
+        $user->roles()->sync($request->roles);
         return back()->with('info', 'Usuario actualizado.');
     }
 

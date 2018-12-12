@@ -17,4 +17,15 @@ class Message extends Model
     public function user(){
     	return $this->belongsTo(User::class);
     }
+
+    public function note()
+    {
+    	//RELACIONES POLIMORFICAS, COMO SEGUNDO PARAMETRO SE LLAMA A LA FUNCION DECLARADA EN EL MODELO NOTE
+    	return $this->morphOne(Note::class, 'notable')->withTimestamps();
+    }
+
+    public function tags()
+    {
+        return $this->morphToMany(Tag::class, 'taggable')->withTimestamps();
+    }
 }

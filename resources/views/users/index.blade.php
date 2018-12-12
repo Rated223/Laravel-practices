@@ -3,7 +3,7 @@
 @section('contenido')
 
 <h1>Usuarios</h1>
-
+<a href="{{ route('usuarios.create') }}" class="btn btn-success float-right mb-3">Registrar Usuario</a>
 <table class="table table-bordered table-striped table-sm">
 	<thead class="thead-dark">
 		<tr>
@@ -11,6 +11,8 @@
 			<th>Nombre</th>
 			<th>Email</th>
 			<th>Rol</th>
+			<th>Notas</th>
+			<th>Etiquetas</th>
 			<th>Acciones</th>
 		</tr>
 	</thead>
@@ -22,6 +24,9 @@
 				<td>{{ $user->email }}</td>
 				<td>
 					{{ $user->roles->pluck('display_name')->implode(', ') }}
+				</td>
+				<td>{{ $user->note->body }}</td>
+				<td>{{ $user->tags->pluck('name')->implode(', ') }}</td>
 				<td>
 					<a class="btn btn-info btn-sm" href=" {{ route('usuarios.edit', $user->id) }}">Editar</a> 
 					<form style="display:inline;" method="POST" action="{{ route('usuarios.destroy', $user->id) }}">
