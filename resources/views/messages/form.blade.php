@@ -1,5 +1,5 @@
 <input type="hidden" name="_token" value ="{{ csrf_token() }}">
-@unless ($message->user_id)
+@if ($showFields)
 	<fieldset class="form-group">
 		<label for="nombre">
 			Nombre:
@@ -14,7 +14,7 @@
 			{!! $errors->first('email', '<span class="error">:message</span>') !!}
 		</label>
 	</fieldset>
-@endunless
+@endif
 
 <fieldset class="form-group">
 	<label for="mensaje">

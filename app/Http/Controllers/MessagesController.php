@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 
 use App\Message;
+use App\Events\MessageWasRecived;
+use Mail;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -28,8 +30,12 @@ class MessagesController extends Controller
         */
 
         // USANDO EL MODELO DE ELOQUENT
-        $mensajes = Message::all();
-
+        //$mensajes = Message::all();
+        //LAS CONSULTAS HECHAS EN LA LINEA ANTERIOR SE PUEDEN OPTIMZIAR DE LA SIGUIENTE FORMA
+        $mensajes = Message::with(['user', 'note', 'tags'])
+        ->orderBy('created_at', request('sorted', 'DESC'))
+        ->paginate(10);
+        //ESTA CLASE DE CONSULTA SIRVE PARA OPTIMIZAR EL TIEMPO DE EJECUCION CUANDO SE TIENEN RELACIONES
 
         /*
         return Message::all();
@@ -83,6 +89,8 @@ class MessagesController extends Controller
             auth()->user()->messages()->save($message);
         }
 
+        event(new MessageWasRecived($message));
+        
         //PARA PERMITIR SOLO A USUARIOS REGISTRADOS ENVIAR MENSAJES SE UTILIZA LA SIGUIENTE LINEA
         //auth()->user()->messages()->create($request->all());
 

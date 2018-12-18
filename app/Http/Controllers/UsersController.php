@@ -23,6 +23,10 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::all();
+        //LAS CONSULTAS HECHAS EN LA LINEA ANTERIOR SE PUEDEN OPTIMIZAR DE LA SIGUIENTE FORMA
+        $users = User::with(['roles', 'note', 'tags'])->get();
+        //ESTA CLASE DE CONSULTA SIRVE PARA OPTIMIZAR EL TIEMPO DE EJECUCION CUANDO SE TIENEN RELACIONES
+
         return view('users.index', compact('users'));
     }
 

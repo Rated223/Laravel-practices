@@ -10,11 +10,11 @@ class Tag extends Model
 
     public function messages()
     {
-    	return $this->morphedByMany(Message::class, 'taggable');
+    	return $this->morphedByMany(Message::class, 'taggable')->withTimestamps();
     }
 
     public function users()
     {
-    	return $this->morphedByMany(User::class, 'taggable');
+    	return $this->morphedByMany(User::class, 'taggable')->withTimestamps();
     }
 }

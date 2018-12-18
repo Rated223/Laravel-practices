@@ -21,11 +21,11 @@ class Message extends Model
     public function note()
     {
     	//RELACIONES POLIMORFICAS, COMO SEGUNDO PARAMETRO SE LLAMA A LA FUNCION DECLARADA EN EL MODELO NOTE
-    	return $this->morphOne(Note::class, 'notable')->withTimestamps();
+    	return $this->morphOne(Note::class, 'notable');
     }
 
     public function tags()
     {
-        return $this->morphToMany(Tag::class, 'taggable')->withTimestamps();
+        return $this->morphToMany(Tag::class, 'taggable');
     }
 }

@@ -22,16 +22,13 @@ Route::get('test', function(){
 });
 */
 
-
 /*
 App\User::create([
-	'name' => 'Estudiante',
-	'email' => 'est@gmail.com',
-	'password' => bcrypt('123123')
+	'name' => 'Daniel',
+	'email' => 'rated@gmail.com',
+	'password' => bcrypt('qwerty')
 ]);
 */
-
-
 
 /*
 App\Role::create([

@@ -36,7 +36,7 @@
 						{{ $mensaje->mensaje }}
 					</a>
 				</td>
-				<td>{{ $mensaje->note->body }}</td>
+				<td>{{ $mensaje->note ? $mensaje->note->body : '' }}</td>
 				<td>{{ $mensaje->tags->pluck('name')->implode(', ') }}</td>
 				<td>
 					<a class="btn btn-info btn-sm" href=" {{ route('mensajes.edit', $mensaje->id) }}">Editar</a> 
@@ -50,5 +50,5 @@
 		@endforeach
 	</tbody>
 </table>
-
+{{ $mensajes->appends(['sorted' => request('sorted')])->links('pagination::bootstrap-4') }}
 @stop
