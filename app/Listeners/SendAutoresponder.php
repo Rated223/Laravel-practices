@@ -7,7 +7,7 @@ use Mail;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class SendAutoresponder
+class SendAutoresponder implements ShouldQueue
 {
     /**
      * Create the event listener.

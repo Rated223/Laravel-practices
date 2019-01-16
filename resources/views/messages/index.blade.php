@@ -20,24 +20,11 @@
 		@foreach ($mensajes as $mensaje)
 			<tr>
 				<td>{{ $mensaje->id }}</td>
-				@if ($mensaje->user_id)
-					<td>
-						<a href="{{ route('usuarios.show', $mensaje->user_id) }}">
-							{{ $mensaje->user->name }}
-						</a>
-					</td>
-					<td>{{ $mensaje->user->email }}</td>
-				@else
-					<td>{{ $mensaje->nombre }}</td>
-					<td>{{ $mensaje->email }}</td>
-				@endif
-				<td>
-					<a href="{{ route('mensajes.show', $mensaje->id) }}">
-						{{ $mensaje->mensaje }}
-					</a>
-				</td>
-				<td>{{ $mensaje->note ? $mensaje->note->body : '' }}</td>
-				<td>{{ $mensaje->tags->pluck('name')->implode(', ') }}</td>
+				<td>{{ $mensaje->present()->userName() }}</td>
+				<td>{{ $mensaje->present()->userEmail() }}</td>
+				<td>{{ $mensaje->present()->link() }}</td>
+				<td>{{ $mensaje->present()->notes() }}</td>
+				<td>{{ $mensaje->present()->tags() }}</td>
 				<td>
 					<a class="btn btn-info btn-sm" href=" {{ route('mensajes.edit', $mensaje->id) }}">Editar</a> 
 					<form style="display:inline;" method="POST" action="{{ route('mensajes.destroy', $mensaje->id) }}">

@@ -20,13 +20,11 @@
 		@foreach ($users as $user)
 			<tr>
 				<td>{{ $user->id }}</td>
-				<td>{{ $user->name }}</td>
+				<td>{{ $user->present()->link() }}</td>
 				<td>{{ $user->email }}</td>
-				<td>
-					{{ $user->roles->pluck('display_name')->implode(', ') }}
-				</td>
-				<td>{{ $user->note ? $user->note->body : '' }}</td>
-				<td>{{ $user->tags->pluck('name')->implode(', ') }}</td>
+				<td>{{ $user->present()->roles() }}</td>
+				<td>{{ $user->present()->notes() }}</td>
+				<td>{{ $user->present()->tags() }}</td>
 				<td>
 					<a class="btn btn-info btn-sm" href=" {{ route('usuarios.edit', $user->id) }}">Editar</a> 
 					<form style="display:inline;" method="POST" action="{{ route('usuarios.destroy', $user->id) }}">
