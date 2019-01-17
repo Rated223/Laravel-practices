@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Events\MessageWasRecived;
+use App\Http\Requests\CreateMessage;
 use App\Message;
 use App\Repositories\MessagesInterface;
 use Illuminate\Http\Request;
@@ -47,9 +48,9 @@ class MessagesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CreateMessage $request)
     {
-        $message = $this->messages->store($request);
+        $message = $this->messages->store($request->validated());
 
         event(new MessageWasRecived($message));
         
