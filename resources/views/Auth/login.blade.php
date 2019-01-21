@@ -2,7 +2,7 @@
 
 @section('contenido')
 	<h1>Login</h1>
-
+	<!--Rename carpet-->
 	<form class="form-inline" action="/login" method="POST">
 		{!! csrf_field() !!}
 		<input class="form-control mr-1" type="email" name="email" placeholder="Email">
