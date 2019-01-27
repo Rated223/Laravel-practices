@@ -52,7 +52,7 @@ class MessagesController extends Controller
     {
         $message = $this->messages->store($request->validated());
 
-        event(new MessageWasRecived($message));
+        //event(new MessageWasRecived($message));
         
         return redirect() -> route('mensajes.create')->with('info', 'Hemos recibido tu mensaje');
     }
