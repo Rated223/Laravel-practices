@@ -48,11 +48,11 @@ class MessagesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateMessage $request)
+    public function store(Request $request)
     {
-        $message = $this->messages->store($request->validated());
+        $message = $this->messages->store($request);
 
-        //event(new MessageWasRecived($message));
+        event(new MessageWasRecived($message));
         
         return redirect() -> route('mensajes.create')->with('info', 'Hemos recibido tu mensaje');
     }
