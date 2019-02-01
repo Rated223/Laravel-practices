@@ -2,10 +2,11 @@
 
 namespace App\Listeners;
 
-use Mail;
 use App\Events\MessageWasRecived;
-use Illuminate\Queue\InteractsWithQueue;
+use App\Mail\MensajeRecibido;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Queue\InteractsWithQueue;
+use Mail;
 
 class SendNotificationToTheOwner implements ShouldQueue
 {
@@ -28,11 +29,16 @@ class SendNotificationToTheOwner implements ShouldQueue
     public function handle(MessageWasRecived $event)
     {
         $message = $event->message;
-        Mail::send('emails.contact', ['msg' => $message], function ($m) use ($message) {
+
+        Mail::to('Rated223@prueba.com', 'Daniel')->send(new MensajeRecibido($message));
+
+        /*
+        Mail::send('emails.contact', ['data' => $message], function ($m) use ($message) {
             $m->from($message->email, $message->nombre);
             $m->to('Rated223@prueba.com', 'Daniel');
         
             $m->subject('Tu mensaje fue recibido');
         });
+        */
     }
 }

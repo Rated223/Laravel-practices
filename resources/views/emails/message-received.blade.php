@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Mensaje recibido</title>
+	<title>Mensaje recibido desde {{ env('APP_URL') }}</title>
 </head>
 <body>
-	<h1>Te responderemos a la brevedad posible</h1>
+	<h1>Mensaje recibido desde {{ env('APP_URL') }}</h1>
 	<p>
 		Nombre: {{ $data->nombre }} <br>
 		Email: {{ $data->email }} <br>
