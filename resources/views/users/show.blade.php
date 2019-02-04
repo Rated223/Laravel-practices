@@ -2,6 +2,7 @@
 
 @section('contenido')
 	<h1>Perfil {{ $user->id }}</h1>
+	<img width="100px" src="{{ Storage::url($user->avatar) }}" alt="">
 	<table class="table table-sm">
 		<tr>
 			<th>Nombre</th>

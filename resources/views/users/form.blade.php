@@ -1,4 +1,9 @@
 {!! csrf_field() !!}
+<fieldset class="form-grupo">
+	<label for="avatar">
+		<input type="file" name="avatar">
+	</label>
+</fieldset>
 <fieldset class="form-group">
 	<label for="name">
 		Nombre:

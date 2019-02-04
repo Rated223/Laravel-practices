@@ -38,6 +38,14 @@
 							<li class="nav-item">
 								<a class="nav-link {{ activeM('mensajes*') }}" href="{{ route('mensajes.index') }}">Mensajes</a>
 							</li>
+							<li class="nav-item">
+								<a class="nav-link {{ activeM('chat*') }}" href="{{ route('chat.index') }}">
+									Chat
+									@if ($count = Auth::user()->unreadNotifications->count())
+										<span class="badge badge-pill badge-dark">{{ $count }}</span>
+									@endif
+								</a>
+							</li>
 							@if (auth()->user()->hasRoles(['admin']))
 								<li class="nav-item">
 									<a class="nav-link {{ activeM('usuarios*') }}" href="{{ route('usuarios.index') }}">Usuarios</a>
@@ -64,6 +72,7 @@
 	</header>
 	<main class="container">
 		@yield('contenido')
+		<hr>
 		<footer>Reservado {{ date('Y') }}</footer>
 	</main>
 	<script src="/js/app.js"></script>
