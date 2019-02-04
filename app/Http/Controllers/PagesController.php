@@ -58,4 +58,12 @@ class PagesController extends Controller
     	}
 		return 'No tiene nombre.';*/ 	
     }
+
+    public function select(Request $request)
+    {
+        $this->validate($request, [
+            'id' => 'required'
+        ]);
+        return redirect()->route('chat.create', $request->id);
+    }
 }

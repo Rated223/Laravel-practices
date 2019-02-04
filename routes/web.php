@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,3 +28,5 @@ Route::resource('mensajes', 'MessagesController');
 Route::resource('usuarios', 'UsersController');
 Route::resource('chat', 'ChatController');
 Route::get('chat/create/{id}',['as' => 'chat.create', 'uses' => 'ChatController@create']);
+
+Route::post('chat/select/',['as' => 'chat.select', 'uses' => 'PagesController@select']);

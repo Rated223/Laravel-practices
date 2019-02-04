@@ -10,25 +10,25 @@
 				@endif
 				<hr>
 				<h4>Nuevo mensaje</h4>
-				<form action="{{ route('chat.store') }}" method="POST">
+				<form action="{{ route('chat.select') }}" method="POST">
 					{{ csrf_field() }}
 					<div class="form-row">
 						<div class="col">
-							<select name="recipient_id" id="" class="form-control {{ $errors->has('recipient_id') ? 'is-invalid' : '' }}">
+							<select name="id" id="id" class="form-control {{ $errors->has('id') ? 'is-invalid' : '' }}">
 								<option value="">Selecciona el usuario</option>
 								@foreach ($users as $user)
 									<option value="{{ $user->id }}">{{ $user->name }}</option>
 								@endforeach
 							</select>
-							{!! $errors->first('recipient_id', '<span class="small text-danger">:message</span>') !!}
+							{!! $errors->first('id', '<span class="small text-danger">Seleccione un usuario</span>') !!}
 						</div>
 						<div class="col-auto">
-							<button class="btn btn-primary">Enviar</button>
+							<button type="submit" class="btn btn-primary">Ver</button>
 						</div>
 					</div>
 				</form>
 				<hr>
-				<h4>Conversaciones</h4>
+				<h4>Mensajes recibidos</h4>
 				<ul class="list-group">
 					@foreach ($notifications as $notification)
 						<a href="{{ route('chat.create', $notification->data['sender_id']) }}" class="list-group-item text-dark {{ is_null($notification->read_at) ? 'bg-light' : '' }}">

@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="/css/styles.css">
 	<script>
-		window.Laravel = {
-			csrfToken: "{{ csrf_token() }}"
-		}
+		window.Laravel = {!! json_encode([
+			'csrfToken' => csrf_token(),
+		]) !!};
 	</script>
 	<title>Mi sitio</title>
 </head>

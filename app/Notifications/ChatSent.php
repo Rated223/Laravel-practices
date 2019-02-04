@@ -7,7 +7,7 @@ use Illuminate\Notifications\Notification;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 
-class ChatSent extends Notification
+class ChatSent extends Notification implements ShouldQueue
 {
     private $chat;
 
@@ -32,7 +32,7 @@ class ChatSent extends Notification
      */
     public function via($notifiable)
     {
-        return ['database'];
+        return ['database', 'mail'];
     }
 
     /**
@@ -44,9 +44,14 @@ class ChatSent extends Notification
     public function toMail($notifiable)
     {
         return (new MailMessage)
-                    ->line('The introduction to the notification.')
-                    ->action('Notification Action', url('/'))
-                    ->line('Thank you for using our application!');
+                    ->greeting($notifiable->name . ",")
+                    ->subject('Prueba Laravel: Mensaje recibido')
+                    ->line('Has recibido un mensaje')
+                    ->action('Ir al chat', url('chat.create', $this->chat->sender_id))
+                    ->line('Gracias por usar nuestra aplicacion!');
+
+        //return (new MailMessage)->view('', [data]);
+        //Tambien se puede usar un mailable
     }
 
     /**
