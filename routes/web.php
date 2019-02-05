@@ -27,6 +27,7 @@ Route::get('logout', ['as'=> 'logout', 'uses' => 'Auth\LoginController@logout'])
 Route::resource('mensajes', 'MessagesController');
 Route::resource('usuarios', 'UsersController');
 Route::resource('chat', 'ChatController');
-Route::get('chat/create/{id}',['as' => 'chat.create', 'uses' => 'ChatController@create']);
+Route::resource('posts', 'PostController');
 
+Route::get('chat/create/{id}',['as' => 'chat.create', 'uses' => 'ChatController@create']);
 Route::post('chat/select/',['as' => 'chat.select', 'uses' => 'PagesController@select']);

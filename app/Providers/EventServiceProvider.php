@@ -17,6 +17,9 @@ class EventServiceProvider extends ServiceProvider
             'App\Listeners\SendAutoresponder',
             'App\Listeners\SendNotificationToTheOwner'
         ],
+        'App\Events\PostCreated' => [
+            'App\Listeners\NotifyUserAboutNewPost'
+        ]
     ];
 
     /**

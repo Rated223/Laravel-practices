@@ -41,7 +41,15 @@
 							<li class="nav-item">
 								<a class="nav-link {{ activeM('chat*') }}" href="{{ route('chat.index') }}">
 									Chat
-									@if ($count = Auth::user()->unreadNotifications->count())
+									@if ($count = Auth::user()->unreadNotifications->where('type', 'App\Notifications\ChatSent')->count())
+										<span class="badge badge-pill badge-dark">{{ $count }}</span>
+									@endif
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link {{ activeM('posts*') }}" href="{{ route('posts.index') }}">
+									Publicaciones
+									@if ($count = Auth::user()->unreadNotifications->where('type', 'App\Notifications\PostPublished')->count())
 										<span class="badge badge-pill badge-dark">{{ $count }}</span>
 									@endif
 								</a>
