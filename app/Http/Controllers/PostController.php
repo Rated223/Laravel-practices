@@ -20,8 +20,13 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        if ($request->ajax()) {
+            $notifications = auth()->user()->unreadNotifications->where('type', 'App\Notifications\PostPublished');
+            return $notifications;
+        }
+
         $notifications = auth()->user()->Notifications->where('type', 'App\Notifications\PostPublished');
         foreach ($notifications as $notification) {
             $notification->markAsRead();
@@ -65,6 +70,14 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
+        $notifications = auth()->user()->Notifications
+            ->where('type', 'App\Notifications\PostPublished');
+
+        foreach ($notifications as $notification) {
+            if($notification->data['id'] == $post->id){
+                $notification->markAsRead();
+            }
+        }
         return view('posts.show', compact('post'));
     }
 

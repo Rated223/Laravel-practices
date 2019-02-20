@@ -19347,6 +19347,7 @@ module.exports = __webpack_require__(92);
 /***/ (function(module, exports, __webpack_require__) {
 
 
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -19363,7 +19364,7 @@ window.Vue = __webpack_require__(85);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(88));
+Vue.component('notifications', __webpack_require__(88));
 
 var app = new Vue({
 	el: '#app'
@@ -66183,7 +66184,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources\\assets\\js\\components\\ExampleComponent.vue"
+Component.options.__file = "resources\\assets\\js\\components\\Notifications.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -66192,9 +66193,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-0ca92eac", Component.options)
+    hotAPI.createRecord("data-v-7407b301", Component.options)
   } else {
-    hotAPI.reload("data-v-0ca92eac", Component.options)
+    hotAPI.reload("data-v-7407b301", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -66335,10 +66336,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            posts: []
+        };
+    },
     mounted: function mounted() {
-        console.log('Component mounted.');
+        var _this = this;
+
+        axios.get('/posts').then(function (res) {
+            _this.posts = res.data;
+        });
+    },
+
+    methods: {
+        markAllAsRead: function markAllAsRead() {
+            var _this2 = this;
+
+            axios.patch('/read/').then(function (res) {
+                _this2.posts = res.data;
+            });
+        }
     }
 });
 
@@ -66350,38 +66375,88 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row justify-content-center" }, [
-        _c("div", { staticClass: "col-md-8" }, [
-          _c("div", { staticClass: "card card-default" }, [
-            _c("div", { staticClass: "card-header" }, [
-              _vm._v("Example Component")
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              )
+  return _c("li", { staticClass: "nav-item dropdown" }, [
+    _c(
+      "a",
+      {
+        staticClass: "nav-link",
+        attrs: {
+          href: "#",
+          id: "dropPublicaciones",
+          role: "button",
+          "data-toggle": "dropdown",
+          "aria-haspopup": "true",
+          "aria-expanded": "false"
+        }
+      },
+      [
+        _c("i", { staticClass: "far fa-bell" }),
+        _vm._v(" "),
+        _vm.posts.length
+          ? _c("span", {
+              staticClass: "badge badge-pill badge-dark",
+              domProps: { textContent: _vm._s(_vm.posts.length) }
+            })
+          : _vm._e()
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "ul",
+      {
+        staticClass: "dropdown-menu",
+        attrs: { "aria-labelledby": "dropPublicaciones" }
+      },
+      [
+        _vm._l(_vm.posts, function(post) {
+          return _vm.posts.length
+            ? _c("li", [
+                _c("a", {
+                  staticClass: "dropdown-item",
+                  attrs: { href: "/posts/" + post.data.id },
+                  domProps: { textContent: _vm._s(post.data.title) }
+                })
+              ])
+            : _vm._e()
+        }),
+        _vm._v(" "),
+        !_vm.posts.length
+          ? _c("li", { staticClass: "small text-center" }, [
+              _vm._v("\n            no hay notificaciones   \n        ")
             ])
+          : _vm._e(),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("li", { staticClass: "dropdown-item" }, [
+          _vm.posts.length
+            ? _c(
+                "a",
+                {
+                  staticClass: "text-dark mr-3",
+                  attrs: { href: "#" },
+                  on: { click: _vm.markAllAsRead }
+                },
+                [_vm._v("Marcar todo como leido")]
+              )
+            : _vm._e(),
+          _vm._v(" "),
+          _c("a", { staticClass: "text-dark", attrs: { href: "/posts" } }, [
+            _vm._v("Ver todos los post")
           ])
         ])
-      ])
-    ])
-  }
-]
+      ],
+      2
+    )
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-0ca92eac", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-7407b301", module.exports)
   }
 }
 

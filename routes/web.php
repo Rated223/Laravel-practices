@@ -29,5 +29,15 @@ Route::resource('usuarios', 'UsersController');
 Route::resource('chat', 'ChatController');
 Route::resource('posts', 'PostController');
 
+Route::patch('read', function()
+{
+	if (request()->ajax()) {
+		$notifications = auth()->user()->unreadNotifications->where('type', 'App\Notifications\PostPublished');
+	    foreach ($notifications as $notification) {
+	        $notification->markAsRead();
+	    }
+	    return auth()->user()->unreadNotifications->where('type', 'App\Notifications\PostPublished');
+	}
+});
 Route::get('chat/create/{id}',['as' => 'chat.create', 'uses' => 'ChatController@create']);
 Route::post('chat/select/',['as' => 'chat.select', 'uses' => 'PagesController@select']);
