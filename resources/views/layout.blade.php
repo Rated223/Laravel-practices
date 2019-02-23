@@ -75,6 +75,9 @@
 								<li class="nav-item ml-md-auto">
 									<a class="nav-link {{ activeM('login') }}" href="/login">Login</a>
 								</li>
+								<li class="nav-item">
+									<a class="nav-link {{ activeM('login') }}" href="/register">Registrarse</a>
+								</li>
 							@endif
 						</ul>
 					</div>

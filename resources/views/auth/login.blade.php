@@ -8,6 +8,7 @@
 		<input class="form-control mr-1" type="email" name="email" placeholder="Email">
 		<input class="form-control mr-1" type="password" name="password" placeholder="Contraseña">
 		<input class="btn btn-primary" type="submit" value="Entrar">
+		<a class="ml-2" href="{{ route('password.request') }}">¿Olvidaste tu contraseña?</a>
 	</form>
 	<br>
 @endsection
