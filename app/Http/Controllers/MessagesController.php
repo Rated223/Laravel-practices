@@ -7,17 +7,20 @@ use App\Events\MessageWasRecived;
 use App\Http\Requests\CreateMessage;
 use App\Message;
 use App\Repositories\MessagesInterface;
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
 class MessagesController extends Controller
 {
     protected $messages;
+    protected $view;
 
-    public function __construct(MessagesInterface $messages)
+    public function __construct(MessagesInterface $messages, Factory $view)
     {
         $this->messages = $messages;
         $this->middleware('auth', ['except' => ['create', 'store']]);
+        $this->view = $view;
     }
 
     /**
@@ -29,7 +32,7 @@ class MessagesController extends Controller
     {
         $mensajes = $this->messages->getPaginated();
 
-        return view("messages.index", compact('mensajes'));
+        return $this->view->make("messages.index", compact('mensajes'));
     }
 
     /**
